@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalActionsheetKontroller" customModule="Min_Vekeplan" customModuleProvider="target">
+            <connections>
+                <outlet property="bakgrunnsView" destination="wic-76-ZFk" id="PPH-b8-lPn"/>
+                <outlet property="modalView" destination="Pes-iH-rQ5" id="jN6-Un-wdy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wic-76-ZFk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pes-iH-rQ5">
+                            <rect key="frame" x="0.0" y="531" width="375" height="136"/>
+                            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Pes-iH-rQ5" firstAttribute="leading" secondItem="wic-76-ZFk" secondAttribute="leading" id="MX1-d9-DuG"/>
+                        <constraint firstAttribute="bottom" secondItem="Pes-iH-rQ5" secondAttribute="bottom" constant="-200" id="Ujm-YS-lBJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Pes-iH-rQ5" secondAttribute="trailing" id="Wqw-Og-RkM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wic-76-ZFk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GwW-l3-A9q"/>
+                <constraint firstAttribute="bottom" secondItem="wic-76-ZFk" secondAttribute="bottom" id="UTt-of-vi4"/>
+                <constraint firstItem="wic-76-ZFk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Yss-vG-BYt"/>
+                <constraint firstAttribute="trailing" secondItem="wic-76-ZFk" secondAttribute="trailing" id="cdL-Ja-swF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="147.97601199400302"/>
+        </view>
+    </objects>
+</document>
