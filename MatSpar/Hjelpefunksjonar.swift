@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import Biilde
 import Verdensrommet
+import SkiilVarslingar
 
 let NO = false
 let YES = true
@@ -126,6 +127,26 @@ extension UIDeviceOrientation {
                 return .portraitUpsideDown
             default:
                 return .portrait
+        }
+    }
+}
+
+extension UIViewController {
+    func varsling(tittel: String, melding: String, knapp: String?=nil, handler: @escaping ()->Void) {
+        let alert = VarslingController(tittel: tittel, beskrivelse: melding, knapptekst: knapp ?? "Ok", avbrytbar: YES) {_ in
+            handler()
+        }
+        alert.modalPresentationStyle = .overFullScreen
+        self.present(alert, animated: NO, completion: nil)
+    }
+    
+    func prompt(tittel: String, melding: String, timeout: TimeInterval) {
+        let alert = VarslingController(tittel: tittel, beskrivelse: melding, knapptekst: nil, avbrytbar: NO)
+        alert.modalPresentationStyle = .overFullScreen
+        self.present(alert, animated: NO) {
+            Timer.scheduledTimer(withTimeInterval: timeout, repeats: NO) { (_) in
+                alert.lukk(skalFullfore: NO)
+            }
         }
     }
 }

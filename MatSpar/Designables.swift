@@ -67,7 +67,7 @@ import UIKit
     
     private var textInsets: UIEdgeInsets {
         let leadingAnchor = inset + self.frame.height - (inset * 2)
-        return UIEdgeInsets(top: 2, left: leadingAnchor, bottom: 2, right: 4)
+        return UIEdgeInsets(top: 2, left: leadingAnchor + 4, bottom: 2, right: 4)
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -270,7 +270,12 @@ enum NavKnappLayout {
     
     func vertikalLayout(_ navBar: UINavigationBar, view: UIView) {
         if navBar.prefersLargeTitles {
-            view.bottomAnchor.constraint(equalTo: navBar.bottomAnchor, constant: -8).isActive = YES
+            switch self {
+                case .vedSidanAv(let view2):
+                    view.centerYAnchor.constraint(equalTo: view2.centerYAnchor).isActive = YES
+                default:
+                    view.bottomAnchor.constraint(equalTo: navBar.bottomAnchor, constant: -8).isActive = YES
+            }
         }else {
             switch self {
                 case .vedSidanAv(let view2):

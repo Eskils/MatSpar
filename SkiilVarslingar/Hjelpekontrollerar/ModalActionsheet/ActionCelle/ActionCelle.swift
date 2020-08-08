@@ -47,8 +47,8 @@ class ActionCelle: UITableViewCell {
         tekstLabel.text = tekst
         ikonBilde.image = ikon
         
-        tekstLabel.textColor = tema
-        ikonBilde.tintColor = tema
+        tekstLabel.textColor = .tema
+        ikonBilde.tintColor = .tema
         
         ikonBilde.layer.cornerRadius = 12
         

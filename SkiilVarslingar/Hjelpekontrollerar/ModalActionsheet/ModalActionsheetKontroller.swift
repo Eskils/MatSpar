@@ -7,45 +7,45 @@
 //
 
 import UIKit
-import Motion
+//import Motion
 
-struct ActionsheetAction {
-    let tekst: String
-    let bilde: UIImage?
-    let action: Action?
+public struct ActionsheetAction {
+    public let tekst: String
+    public let bilde: UIImage?
+    public let action: Action?
     
-    let erMeny: Bool
-    var menytekst: String? = nil
+    public let erMeny: Bool
+    public var menytekst: String? = nil
     /// Tittel, erVald, ikonn, action
-    var menyceller: [(String, Bool, UIImage, Action)]? = nil
+    public var menyceller: [(String, Bool, UIImage, Action)]? = nil
     
 }
 
-class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
+public class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
     
     @IBOutlet var bakgrunnsView: UIView!
     
     @IBOutlet var modalView: UIView!
     
-    var modalActions : ModalActionsheet!
+    public var modalActions : ModalActionsheet!
     
-    var actions: [ActionsheetAction] = []
-    var cellehøgd: Int? = nil
+    public  var actions: [ActionsheetAction] = []
+    public var cellehøgd: Int? = nil
     
-    init(actions: [ActionsheetAction]) {
+    public init(actions: [ActionsheetAction]) {
         self.actions = actions
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "ModalActionsheetKontroller", bundle: bundle)
     }
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
+    public init() {
+        super.init(nibName: "ModalActionsheetKontroller", bundle: bundle)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -63,7 +63,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         self.modalView.addSubview(actNav.view)
         //setConstrsLikView(view: modalActions.view, [.top, .bottom, .leading, .trailing])
         actNav.view.translatesAutoresizingMaskIntoConstraints = NO
-        constrDekkView(view: actNav.view)
+        actNav.view.constrDekkView()
         modalActions.delegat = self
         
         
@@ -87,12 +87,12 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         
     }
     
-    func addAction(tittel: String, bilde: UIImage? = nil, target: NSObject?, selector: Selector?) {
+    public func addAction(tittel: String, bilde: UIImage? = nil, target: NSObject?, selector: Selector?) {
         let actiondata = ActionsheetAction(tekst: tittel, bilde: bilde, action: Action(target: target ?? self, selector: selector ?? #selector(ingenting)), erMeny: NO)
         actions.append(actiondata)
     }
     
-    func addMeny(tittel: String, bilde: UIImage? = nil, celler: [(String, Bool, UIImage, Action)], valdTekst: String) {
+    public func addMeny(tittel: String, bilde: UIImage? = nil, celler: [(String, Bool, UIImage, Action)], valdTekst: String) {
         var actiondata = ActionsheetAction(tekst: tittel, bilde: bilde, action: nil, erMeny: YES)
         actiondata.menytekst = valdTekst
         actiondata.menyceller = celler
@@ -101,7 +101,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
     
     @objc func ingenting() {}
     
-    func actionSheet(celleVartVald indeks: Int) {
+    public func actionSheet(celleVartVald indeks: Int) {
         let celle = actions[indeks]
         guard let act = celle.action else { return }
         
@@ -110,7 +110,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         }
     }
     
-    func actionSheet(menyVartVald indeks: Int, iMeny menyIndeks: Int) {
+    public func actionSheet(menyVartVald indeks: Int, iMeny menyIndeks: Int) {
         let celle = actions[indeks]
         let menycelle = celle.menyceller?[menyIndeks]
         guard let act = menycelle?.3 else { return }
@@ -118,7 +118,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         (act.target).perform(act.selector)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let hgt = actions.count * (cellehøgd ?? 50) + 220
         self.modalView.heightAnchor.constraint(equalToConstant: CGFloat(hgt)).isActive = YES
@@ -126,7 +126,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         self.modalView.transform = CGAffineTransform(translationX: 0, y: 500)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
@@ -140,7 +140,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         
     }
 
-    func close(completion: (()->Void)?) {
+    public func close(completion: (()->Void)?) {
         UIView.animate(withDuration: 0.2, animations: {
             self.bakgrunnsView.alpha = 0
             self.modalView.transform = CGAffineTransform(translationX: 0, y: 500)
@@ -149,7 +149,7 @@ class ModalActionsheetKontroller: UIViewController, ActionsheetDelegat {
         }
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         
         let touch = touches.first!

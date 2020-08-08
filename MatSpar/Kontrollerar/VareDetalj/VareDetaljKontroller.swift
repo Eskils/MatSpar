@@ -7,6 +7,7 @@
 
 import UIKit
 import Verdensrommet
+import SkiilVarslingar
 
 class VareDetaljKontroller: UIViewController {
     
@@ -18,7 +19,7 @@ class VareDetaljKontroller: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var spinner: UIActivityIndicatorView!
-    var slettKnapp: NavigationKnapp!
+    var meirKnapp: NavigationKnapp!
     
     
     init(vare: Vare, kontroller: VarerKontroller) {
@@ -128,29 +129,33 @@ class VareDetaljKontroller: UIViewController {
         
         //Timer.scheduledTimer(withTimeInterval: 0.05, repeats: NO) { [self] (_) in
         //UIView.animate(withDuration: 0.5) { [self] in
-            let ikon = UIImage(systemName: "trash", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
-            slettKnapp = (self.navigationController?.leggTilKnapp(ikon: ikon, action: Action(target: self, selector: #selector(slettVare)), layoutHandler: .trailing, synlegFor: [self]))!
-            slettKnapp.alpha = 0
+            let ikon = #imageLiteral(resourceName: "round_more_vert_black_36pt")
+            meirKnapp = (self.navigationController?.leggTilKnapp(ikon: ikon, action: Action(target: self, selector: #selector(meir)), layoutHandler: .trailing, synlegFor: [self]))!
+            meirKnapp.alpha = 0
             
-            self.navigationController?.leggTilView(spinner, layoutHandler: .vedSidanAv(slettKnapp))
+            self.navigationController?.leggTilView(spinner, layoutHandler: .vedSidanAv(meirKnapp))
         //}
         //}
         UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
-            self.slettKnapp.alpha = 1
+            self.meirKnapp.alpha = 1
         }, completion: nil)
     }
     
+    @objc func meir() {
+        let picker = ModalActionsheetKontroller()
+        let ikon = UIImage(systemName: "trash", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
+        picker.addAction(tittel: "Slett", bilde: ikon, target: self, selector: #selector(slettVare))
+        picker.modalPresentationStyle = .overFullScreen
+        self.navigationController?.present(picker, animated: NO, completion: nil)
+    }
+    
     @objc func slettVare() {
-        let alert = UIAlertController(title: "Slette \(vare.tittel)?", message: "Er du sikker på at du vil slette \(vare.tittel)? Du kan legge den til igjen ved å søke etter, eller scanne den på nytt.", preferredStyle: .alert)
-        let jaAction = UIAlertAction(title: "Ja", style: .destructive) { (action) in
+        varsling(tittel: "Slette \(vare.tittel)?", melding: "Er du sikker på at du vil slette \(vare.tittel)? Du kan legge den til igjen ved å søke etter, eller scanne den på nytt.", knapp: "Ja") {
+            
             Lagring.slett(medNøkkel: self.vare.id)
             self.sender.varer = self.sender.hentVarer()
             self.navigationController?.popViewController(animated: YES)
         }
-        let avbrytAction = UIAlertAction(title: "Avbryt", style: .cancel, handler: nil)
-        alert.addAction(jaAction)
-        alert.addAction(avbrytAction)
-        self.navigationController?.present(alert, animated: YES, completion: nil)
     }
 
 }

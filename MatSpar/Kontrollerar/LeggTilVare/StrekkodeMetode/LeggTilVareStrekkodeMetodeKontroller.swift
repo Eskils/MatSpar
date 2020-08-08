@@ -276,26 +276,18 @@ class LeggTilVareStrekkodeMetodeKontroller: UIViewController, LeggTilVareMetodeK
                 }
             }else if butikk.feilmelding?.localizedDescription == dataFeil.ingenTreff.localizedDescription {
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Fann ikkje vara i databasen.", message: "Prøv å scanne ei anna vare.", preferredStyle: .alert)
-                    self.present(alert, animated: YES) {
-                        Timer.scheduledTimer(withTimeInterval: 4, repeats: NO) { (_) in
-                            alert.dismiss(animated: YES) {
-                                self.erIPowerdown = NO
-                                self.startØkta()
-                            }
-                        }
+                    self.prompt(tittel: "Fann ikkje vara i databasen", melding: "Prøv å scanne ei anna vare.", timeout: 3)
+                    Timer.scheduledTimer(withTimeInterval: 3, repeats: NO) { (_) in
+                        self.erIPowerdown = NO
+                        self.startØkta()
                     }
                 }
             }else {
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Ein feil oppstod", message: "\(butikk.feilmelding)", preferredStyle: .alert)
-                    self.present(alert, animated: YES) {
-                        Timer.scheduledTimer(withTimeInterval: 3, repeats: NO) { (_) in
-                            alert.dismiss(animated: YES) {
-                                self.erIPowerdown = NO
-                                self.startØkta()
-                            }
-                        }
+                    self.prompt(tittel: "Ein feil oppstod", melding: "\(butikk.feilmelding)", timeout: 3)
+                    Timer.scheduledTimer(withTimeInterval: 3, repeats: NO) { (_) in
+                            self.erIPowerdown = NO
+                            self.startØkta()
                     }
                 }
             }

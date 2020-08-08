@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol ActionsheetDelegat {
+public protocol ActionsheetDelegat {
     func actionSheet(celleVartVald indeks: Int)
     func actionSheet(menyVartVald indeks: Int, iMeny menyIndeks: Int)
 }
 
-class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         let antalCeller = celler.count
         
@@ -26,17 +26,17 @@ class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSo
         return antalCeller
     }
     
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
         guard let celle = tableView.cellForRow(at: indexPath) as? ActionCelle else { return }
-        celle.Cellemembran.backgroundColor = selectedCell
+        celle.Cellemembran.backgroundColor = .valgtCelle
     }
     
-    func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
         guard let celle = tableView.cellForRow(at: indexPath) as? ActionCelle else { return }
-        celle.Cellemembran.backgroundColor = cell
+        celle.Cellemembran.backgroundColor = .celle
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celle = tableView.dequeueReusableCell(withIdentifier: "actionCelle") as! ActionCelle
         
         let celledata = celler[indexPath.row]
@@ -47,14 +47,14 @@ class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSo
         return celle
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(cellehøgd)
     }
     
     var cellehøgd = 50
     
     var valdMeny = 0
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let celle = celler[indexPath.row]
         
@@ -72,25 +72,25 @@ class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     
     var tableView: UITableView!
-    var celler: [ActionsheetAction]
-    var delegat: ActionsheetDelegat?
+    public var celler: [ActionsheetAction]
+    public var delegat: ActionsheetDelegat?
     
     init(celler: [ActionsheetAction]) {
         self.celler = celler
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: bundle)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         tableView = UITableView(frame: .zero, style: .plain)
         self.view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = NO
-        constrDekkView(view: tableView, topConst: 8)
+        tableView.constrDekkView(topConst: 8)
         
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = NO
@@ -98,19 +98,19 @@ class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.delegate = self
         tableView.dataSource = self
         
-        let actionCelleNib = UINib(nibName: "ActionCelle", bundle: nil)
+        let actionCelleNib = UINib(nibName: "ActionCelle", bundle: bundle)
         tableView.register(actionCelleNib, forCellReuseIdentifier: "actionCelle")
         
         self.view.backgroundColor = .clear
         tableView.backgroundColor = .clear
     }
     
-    func menycelleVald(idx: Int) {
+    public func menycelleVald(idx: Int) {
         endreVal(i: valdMeny, til: idx)
         delegat?.actionSheet(menyVartVald: valdMeny, iMeny: idx)
     }
     
-    func endreVal(i meny: Int, til vald: Int) {
+    public func endreVal(i meny: Int, til vald: Int) {
         let celle = tableView.cellForRow(at: IndexPath(row: meny, section: 0)) as! ActionCelle
         var menydata = celler[meny].menyceller!
         
@@ -123,7 +123,7 @@ class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSo
         celler[meny].menyceller = menydata
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(YES, animated: YES)
@@ -131,7 +131,7 @@ class ModalActionsheet: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         

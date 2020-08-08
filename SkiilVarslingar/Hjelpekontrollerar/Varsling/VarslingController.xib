@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Rubik-Bold.ttf">
-            <string>Rubik-Bold</string>
-        </array>
-        <array key="Rubik-Medium.ttf">
-            <string>Rubik-Medium</string>
-        </array>
-        <array key="Rubik-Regular.ttf">
-            <string>Rubik-Regular</string>
-        </array>
-    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VarslingController" customModule="MatDato" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VarslingController" customModule="SkiilVarslingar" customModuleProvider="target">
             <connections>
                 <outlet property="AvbrytKnapp" destination="3gP-CC-zzv" id="vZz-RJ-cXw"/>
                 <outlet property="Beskrivelse" destination="szJ-gA-CAq" id="RcF-QY-zGP"/>
@@ -45,25 +35,25 @@
                     <blurEffect style="dark"/>
                 </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hw5-Kf-cfl">
-                    <rect key="frame" x="47.5" y="264.5" width="280" height="138"/>
+                    <rect key="frame" x="47.5" y="265.5" width="280" height="136"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-sG-ylY">
-                            <rect key="frame" x="0.0" y="0.0" width="280" height="82"/>
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="80"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAG-6f-nuj">
-                                    <rect key="frame" x="8" y="16" width="264" height="23"/>
-                                    <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="19"/>
+                                    <rect key="frame" x="8" y="16" width="264" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szJ-gA-CAq">
-                                    <rect key="frame" x="8" y="47" width="264" height="19"/>
-                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                    <rect key="frame" x="8" y="44.5" width="264" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="szJ-gA-CAq" secondAttribute="bottom" constant="16" id="En7-8C-UjQ"/>
                                 <constraint firstItem="szJ-gA-CAq" firstAttribute="leading" secondItem="fZf-sG-ylY" secondAttribute="leading" constant="8" id="Gxz-U0-Z9O"/>
@@ -75,27 +65,27 @@
                                 <constraint firstItem="sAG-6f-nuj" firstAttribute="leading" secondItem="fZf-sG-ylY" secondAttribute="leading" constant="8" id="zhR-HS-3SO"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THa-0T-Tkb">
-                            <rect key="frame" x="98" y="90" width="182" height="48"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THa-0T-Tkb">
+                            <rect key="frame" x="98" y="88" width="182" height="48"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="OJ1-ui-V2H"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" title="Button">
-                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleColor" systemColor="labelColor"/>
                             </state>
                         </button>
-                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gP-CC-zzv">
-                            <rect key="frame" x="0.0" y="90" width="90" height="48"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gP-CC-zzv">
+                            <rect key="frame" x="0.0" y="88" width="90" height="48"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="7ap-xn-WHr"/>
                                 <constraint firstAttribute="width" constant="90" id="w1L-CI-69a"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" title="Avbryt">
-                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleColor" systemColor="labelColor"/>
                             </state>
                         </button>
                     </subviews>
@@ -119,6 +109,7 @@
                     </variation>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="CY3-DO-Kb9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="5oN-aY-HQ1"/>
@@ -128,8 +119,24 @@
                 <constraint firstItem="Hw5-Kf-cfl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ylR-ji-r59"/>
                 <constraint firstItem="Hw5-Kf-cfl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zEX-Yw-Yg5"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.40000000000001" y="144.3778110944528"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

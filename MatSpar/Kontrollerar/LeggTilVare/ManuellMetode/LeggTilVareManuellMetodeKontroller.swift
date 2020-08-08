@@ -64,8 +64,9 @@ class LeggTilVareManuellMetodeKontroller: UIViewController, LeggTilVareMetodeKon
         let butikk = butikkManager.spar
         butikk.hentSøkeforslag(til: sender.text ?? "") { (resultat) in
             DispatchQueue.main.async {
-                if let resultat = resultat {
-                    self.celler = resultat.compactMap { $0.contentData._source }
+                if (resultat != nil) && !(resultat!.isEmpty)  {
+                    self.statusLabel.isHidden = YES
+                    self.celler = resultat!.compactMap { $0.contentData._source }
                 }else {
                     self.celler = []
                     self.statusLabel.isHidden = NO

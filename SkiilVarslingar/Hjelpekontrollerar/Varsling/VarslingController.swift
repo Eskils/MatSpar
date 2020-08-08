@@ -9,7 +9,7 @@
 import UIKit
 
 /// Syner ein varsling med Overskrift og Ingress. Du kan sjølv velje knapptekst, og om varslingan skal kunne avbrytast. fullføring vert kun kjøyrd om brukaren ikkje vel „avbryt”.
-class VarslingController: UIViewController {
+public class VarslingController: UIViewController {
     
     @IBOutlet var Membran: UIView!
     @IBOutlet var Tittel: UILabel!
@@ -23,12 +23,12 @@ class VarslingController: UIViewController {
     
     var tittel: String!
     var besk: String!
-    var knapp: String!
+    var knapp: String?
     var avbrytbar: Bool!
-    var fullføring: (() -> Void)?
+    var fullføring: ((VarslingController) -> Void)?
     
-    init(tittel: String, beskrivelse: String, knapptekst: String, avbrytbar: Bool = NO, fullføring: (() -> Void)? = nil) {
-        super.init(nibName: "VarslingController", bundle: nil)
+    public init(tittel: String, beskrivelse: String, knapptekst: String?, avbrytbar: Bool = false, fullføring: ((VarslingController) -> Void)? = nil) {
+        super.init(nibName: "VarslingController", bundle: bundle)
         
         self.tittel = tittel
         self.besk = beskrivelse
@@ -41,7 +41,7 @@ class VarslingController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -62,7 +62,7 @@ class VarslingController: UIViewController {
         konfig()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
             let anims = [Membran, Knapp, AvbrytKnapp]
         UIView.animate(withDuration: 0.25) {
@@ -86,14 +86,18 @@ class VarslingController: UIViewController {
             AvbrytKnapp.isHidden = YES
             actionKnappLeadingConstr.isActive = YES
             avbrytTopConstr.isActive = NO
-        }else { AvbrytKnapp.setTitle(Localized("Avbryt"), for: .normal) }
-        self.Knapp.setTitle(self.knapp, for: .normal)
+        }else { AvbrytKnapp.setTitle(NSLocalizedString("Avbryt", comment: ""), for: .normal) }
+        if let knapptitt = self.knapp {
+            self.Knapp.setTitle(knapptitt, for: .normal)
+        }else {
+            self.Knapp.isHidden = YES
+        }
     }
     
     @objc func lukkMedFullforing() { lukk(skalFullfore: YES) }
     @objc func lukkUtanFullforing() { lukk(skalFullfore: NO) }
     
-    func lukk(skalFullfore: Bool) {
+    public func lukk(skalFullfore: Bool) {
         UIView.animate(withDuration: 0.2, animations: {
             let anims = [self.Membran, self.Knapp, self.AvbrytKnapp]
             anims.forEach { av in
@@ -102,11 +106,15 @@ class VarslingController: UIViewController {
             }
         }) { (b) in
             self.modalTransitionStyle = .crossDissolve
-            self.dismiss(animated: YES, completion: skalFullfore ? self.fullføring : nil)
+            self.dismiss(animated: YES) {
+                if skalFullfore {
+                    self.fullføring?(self)
+                }
+            }
         }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         
         //Lukk self om den er avbrytbar og brukaren tappar utanfor viewen.

@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA51A25924DF3A0C00AFD8A5 /* SkiilVarslingar.h in Headers */ = {isa = PBXBuildFile; fileRef = DA51A25724DF3A0C00AFD8A5 /* SkiilVarslingar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA51A25C24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */; };
+		DA51A25D24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA51A26224DF3A4A00AFD8A5 /* Hjelpefunksjonar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51A26124DF3A4A00AFD8A5 /* Hjelpefunksjonar.swift */; };
+		DA51A26324DF3AE200AFD8A5 /* ActionCelle.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC0669424DDCD9100405B7A /* ActionCelle.xib */; };
+		DA51A26424DF3AE700AFD8A5 /* ActionCelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0669524DDCD9100405B7A /* ActionCelle.swift */; };
+		DA51A26524DF3AF900AFD8A5 /* ModalActionsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0668F24DDCD9100405B7A /* ModalActionsheet.swift */; };
+		DA51A26624DF3AF900AFD8A5 /* ModalActionsheetKontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0669224DDCD9100405B7A /* ModalActionsheetKontroller.swift */; };
+		DA51A26724DF3AF900AFD8A5 /* VarslingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0668924DDCD7200405B7A /* VarslingController.swift */; };
+		DA51A26824DF3AF900AFD8A5 /* ModalActionsheetMenydetalj.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0669024DDCD9100405B7A /* ModalActionsheetMenydetalj.swift */; };
+		DA51A26924DF3AF900AFD8A5 /* ModalActionsheetKontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC0669124DDCD9100405B7A /* ModalActionsheetKontroller.xib */; };
+		DA51A26A24DF3AF900AFD8A5 /* VarslingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC0668A24DDCD7200405B7A /* VarslingController.xib */; };
+		DA51A27224DF3B8D00AFD8A5 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51A26C24DF3B8D00AFD8A5 /* PickerView.swift */; };
+		DA51A27324DF3B8D00AFD8A5 /* PickerCelle.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA51A26E24DF3B8D00AFD8A5 /* PickerCelle.xib */; };
+		DA51A27424DF3B8D00AFD8A5 /* PickerCelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51A26F24DF3B8D00AFD8A5 /* PickerCelle.swift */; };
+		DA51A27524DF3B8D00AFD8A5 /* PickerView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51A27024DF3B8D00AFD8A5 /* PickerView+TableView.swift */; };
+		DA51A27624DF3B8D00AFD8A5 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA51A27124DF3B8D00AFD8A5 /* PickerView.xib */; };
+		DA51A27824DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA51A27724DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets */; };
 		DABC489A24D83DF300570BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC489924D83DF300570BAC /* AppDelegate.swift */; };
 		DABC489C24D83DF300570BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC489B24D83DF300570BAC /* SceneDelegate.swift */; };
 		DABC48A324D83DF500570BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABC48A224D83DF500570BAC /* Assets.xcassets */; };
@@ -52,17 +70,16 @@
 		DABC492E24DD860600570BAC /* TilbodCelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC492C24DD860600570BAC /* TilbodCelle.swift */; };
 		DABC492F24DD860600570BAC /* TilbodCelle.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABC492D24DD860600570BAC /* TilbodCelle.xib */; };
 		DABC493124DD8CBD00570BAC /* VareDetalj+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC493024DD8CBD00570BAC /* VareDetalj+TableView.swift */; };
-		DAC0668B24DDCD7200405B7A /* VarslingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0668924DDCD7200405B7A /* VarslingController.swift */; };
-		DAC0668C24DDCD7200405B7A /* VarslingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC0668A24DDCD7200405B7A /* VarslingController.xib */; };
-		DAC0669624DDCD9100405B7A /* ModalActionsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0668F24DDCD9100405B7A /* ModalActionsheet.swift */; };
-		DAC0669724DDCD9100405B7A /* ModalActionsheetMenydetalj.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0669024DDCD9100405B7A /* ModalActionsheetMenydetalj.swift */; };
-		DAC0669824DDCD9100405B7A /* ModalActionsheetKontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC0669124DDCD9100405B7A /* ModalActionsheetKontroller.xib */; };
-		DAC0669924DDCD9100405B7A /* ModalActionsheetKontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0669224DDCD9100405B7A /* ModalActionsheetKontroller.swift */; };
-		DAC0669A24DDCD9100405B7A /* ActionCelle.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC0669424DDCD9100405B7A /* ActionCelle.xib */; };
-		DAC0669B24DDCD9100405B7A /* ActionCelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0669524DDCD9100405B7A /* ActionCelle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DA51A25A24DF3A0C00AFD8A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABC488E24D83DF300570BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA51A25424DF3A0C00AFD8A5;
+			remoteInfo = SkiilVarslingar;
+		};
 		DABC48DD24D84DD400570BAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DABC488E24D83DF300570BAC /* Project object */;
@@ -95,6 +112,7 @@
 			files = (
 				DABC490424DB0E2A00570BAC /* Verdensrommet.framework in Embed Frameworks */,
 				DABC491A24DB3B1900570BAC /* Biilde.framework in Embed Frameworks */,
+				DA51A25D24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Embed Frameworks */,
 				DABC48E024D84DD400570BAC /* Tekstbilde.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -103,6 +121,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkiilVarslingar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA51A25724DF3A0C00AFD8A5 /* SkiilVarslingar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkiilVarslingar.h; sourceTree = "<group>"; };
+		DA51A25824DF3A0C00AFD8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA51A26124DF3A4A00AFD8A5 /* Hjelpefunksjonar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hjelpefunksjonar.swift; sourceTree = "<group>"; };
+		DA51A26C24DF3B8D00AFD8A5 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		DA51A26E24DF3B8D00AFD8A5 /* PickerCelle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerCelle.xib; sourceTree = "<group>"; };
+		DA51A26F24DF3B8D00AFD8A5 /* PickerCelle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCelle.swift; sourceTree = "<group>"; };
+		DA51A27024DF3B8D00AFD8A5 /* PickerView+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PickerView+TableView.swift"; sourceTree = "<group>"; };
+		DA51A27124DF3B8D00AFD8A5 /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
+		DA51A27724DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = round_more_vert_black_36pt.xcassets; sourceTree = "<group>"; };
 		DABC489624D83DF300570BAC /* MatSpar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatSpar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABC489924D83DF300570BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABC489B24D83DF300570BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,12 +189,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA51A25224DF3A0C00AFD8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC489324D83DF300570BAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DABC490324DB0E2A00570BAC /* Verdensrommet.framework in Frameworks */,
 				DABC491924DB3B1900570BAC /* Biilde.framework in Frameworks */,
+				DA51A25C24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Frameworks */,
 				DABC48DF24D84DD400570BAC /* Tekstbilde.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +231,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA51A25624DF3A0C00AFD8A5 /* SkiilVarslingar */ = {
+			isa = PBXGroup;
+			children = (
+				DA51A25724DF3A0C00AFD8A5 /* SkiilVarslingar.h */,
+				DA51A26124DF3A4A00AFD8A5 /* Hjelpefunksjonar.swift */,
+				DAC0668724DDCD6500405B7A /* Hjelpekontrollerar */,
+				DA51A25824DF3A0C00AFD8A5 /* Info.plist */,
+			);
+			path = SkiilVarslingar;
+			sourceTree = "<group>";
+		};
+		DA51A26B24DF3B8D00AFD8A5 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				DA51A26C24DF3B8D00AFD8A5 /* PickerView.swift */,
+				DA51A26D24DF3B8D00AFD8A5 /* Celle */,
+				DA51A27024DF3B8D00AFD8A5 /* PickerView+TableView.swift */,
+				DA51A27124DF3B8D00AFD8A5 /* PickerView.xib */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		DA51A26D24DF3B8D00AFD8A5 /* Celle */ = {
+			isa = PBXGroup;
+			children = (
+				DA51A26E24DF3B8D00AFD8A5 /* PickerCelle.xib */,
+				DA51A26F24DF3B8D00AFD8A5 /* PickerCelle.swift */,
+			);
+			path = Celle;
+			sourceTree = "<group>";
+		};
 		DABC488D24D83DF300570BAC = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +270,7 @@
 				DABC48D924D84DD400570BAC /* Tekstbilde */,
 				DABC48FD24DB0E2A00570BAC /* Verdensrommet */,
 				DABC491324DB3B1900570BAC /* Biilde */,
+				DA51A25624DF3A0C00AFD8A5 /* SkiilVarslingar */,
 				DABC489724D83DF300570BAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -214,6 +282,7 @@
 				DABC48D824D84DD400570BAC /* Tekstbilde.framework */,
 				DABC48FC24DB0E2A00570BAC /* Verdensrommet.framework */,
 				DABC491224DB3B1900570BAC /* Biilde.framework */,
+				DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,9 +297,9 @@
 				DABC48CD24D83F8A00570BAC /* Hjelpefunksjonar.swift */,
 				DABC48CF24D840E600570BAC /* Celledata.swift */,
 				DABC492524DC5F0500570BAC /* Lagring.swift */,
+				DA51A27724DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets */,
 				DABC48BE24D83EE600570BAC /* Celler */,
 				DABC48AE24D83E1500570BAC /* Kontrollerar */,
-				DAC0668724DDCD6500405B7A /* Hjelpekontrollerar */,
 				DABC48A224D83DF500570BAC /* Assets.xcassets */,
 				DABC48A424D83DF500570BAC /* LaunchScreen.storyboard */,
 				DABC48A724D83DF500570BAC /* Info.plist */,
@@ -405,6 +474,7 @@
 		DAC0668724DDCD6500405B7A /* Hjelpekontrollerar */ = {
 			isa = PBXGroup;
 			children = (
+				DA51A26B24DF3B8D00AFD8A5 /* PickerView */,
 				DAC0668D24DDCD9100405B7A /* ModalActionsheet */,
 				DAC0668824DDCD7200405B7A /* Varsling */,
 			);
@@ -452,6 +522,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		DA51A25024DF3A0C00AFD8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA51A25924DF3A0C00AFD8A5 /* SkiilVarslingar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC48D324D84DD400570BAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,6 +557,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DA51A25424DF3A0C00AFD8A5 /* SkiilVarslingar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA51A26024DF3A0C00AFD8A5 /* Build configuration list for PBXNativeTarget "SkiilVarslingar" */;
+			buildPhases = (
+				DA51A25024DF3A0C00AFD8A5 /* Headers */,
+				DA51A25124DF3A0C00AFD8A5 /* Sources */,
+				DA51A25224DF3A0C00AFD8A5 /* Frameworks */,
+				DA51A25324DF3A0C00AFD8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkiilVarslingar;
+			productName = SkiilVarslingar;
+			productReference = DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		DABC489524D83DF300570BAC /* MatSpar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DABC48AA24D83DF500570BAC /* Build configuration list for PBXNativeTarget "MatSpar" */;
@@ -494,6 +590,7 @@
 				DABC48DE24D84DD400570BAC /* PBXTargetDependency */,
 				DABC490224DB0E2A00570BAC /* PBXTargetDependency */,
 				DABC491824DB3B1900570BAC /* PBXTargetDependency */,
+				DA51A25B24DF3A0C00AFD8A5 /* PBXTargetDependency */,
 			);
 			name = MatSpar;
 			productName = MatSpar;
@@ -563,6 +660,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					DA51A25424DF3A0C00AFD8A5 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
 					DABC489524D83DF300570BAC = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -596,11 +697,24 @@
 				DABC48D724D84DD400570BAC /* Tekstbilde */,
 				DABC48FB24DB0E2A00570BAC /* Verdensrommet */,
 				DABC491124DB3B1900570BAC /* Biilde */,
+				DA51A25424DF3A0C00AFD8A5 /* SkiilVarslingar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA51A25324DF3A0C00AFD8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA51A27624DF3B8D00AFD8A5 /* PickerView.xib in Resources */,
+				DA51A26324DF3AE200AFD8A5 /* ActionCelle.xib in Resources */,
+				DA51A26A24DF3AF900AFD8A5 /* VarslingController.xib in Resources */,
+				DA51A26924DF3AF900AFD8A5 /* ModalActionsheetKontroller.xib in Resources */,
+				DA51A27324DF3B8D00AFD8A5 /* PickerCelle.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC489424D83DF300570BAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -610,11 +724,9 @@
 				DABC48A624D83DF500570BAC /* LaunchScreen.storyboard in Resources */,
 				DABC492F24DD860600570BAC /* TilbodCelle.xib in Resources */,
 				DABC48BD24D83ED800570BAC /* VareDetaljKontroller.xib in Resources */,
-				DAC0668C24DDCD7200405B7A /* VarslingController.xib in Resources */,
 				DABC48C424D83F2000570BAC /* CollectionVareCelle.xib in Resources */,
-				DAC0669A24DDCD9100405B7A /* ActionCelle.xib in Resources */,
-				DAC0669824DDCD9100405B7A /* ModalActionsheetKontroller.xib in Resources */,
 				DABC48F224D897C600570BAC /* LeggTilVareStrekkodeMetodeKontroller.xib in Resources */,
+				DA51A27824DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets in Resources */,
 				DABC48EE24D897B000570BAC /* LeggTilVareManuellMetodeKontroller.xib in Resources */,
 				DABC48B224D83E6E00570BAC /* VarerKontroller.xib in Resources */,
 				DABC48A324D83DF500570BAC /* Assets.xcassets in Resources */,
@@ -645,6 +757,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA51A25124DF3A0C00AFD8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA51A26524DF3AF900AFD8A5 /* ModalActionsheet.swift in Sources */,
+				DA51A26224DF3A4A00AFD8A5 /* Hjelpefunksjonar.swift in Sources */,
+				DA51A26824DF3AF900AFD8A5 /* ModalActionsheetMenydetalj.swift in Sources */,
+				DA51A26724DF3AF900AFD8A5 /* VarslingController.swift in Sources */,
+				DA51A27524DF3B8D00AFD8A5 /* PickerView+TableView.swift in Sources */,
+				DA51A26624DF3AF900AFD8A5 /* ModalActionsheetKontroller.swift in Sources */,
+				DA51A27224DF3B8D00AFD8A5 /* PickerView.swift in Sources */,
+				DA51A26424DF3AE700AFD8A5 /* ActionCelle.swift in Sources */,
+				DA51A27424DF3B8D00AFD8A5 /* PickerCelle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC489224D83DF300570BAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,7 +782,6 @@
 				DABC48D024D840E600570BAC /* Celledata.swift in Sources */,
 				DABC492924DC6A3600570BAC /* Varekategori.swift in Sources */,
 				DABC48F424D8AA5300570BAC /* ManuellMetode+TableView.swift in Sources */,
-				DAC0669724DDCD9100405B7A /* ModalActionsheetMenydetalj.swift in Sources */,
 				DABC48D224D842D000570BAC /* Varer+CollectionView.swift in Sources */,
 				DABC48C924D83F4100570BAC /* TableVareCelle.swift in Sources */,
 				DABC48BC24D83ED800570BAC /* VareDetaljKontroller.swift in Sources */,
@@ -663,16 +790,12 @@
 				DABC48C324D83F2000570BAC /* CollectionVareCelle.swift in Sources */,
 				DABC48CC24D83F7800570BAC /* Designables.swift in Sources */,
 				DABC48F124D897C600570BAC /* LeggTilVareStrekkodeMetodeKontroller.swift in Sources */,
-				DAC0668B24DDCD7200405B7A /* VarslingController.swift in Sources */,
 				DABC493124DD8CBD00570BAC /* VareDetalj+TableView.swift in Sources */,
-				DAC0669B24DDCD9100405B7A /* ActionCelle.swift in Sources */,
-				DAC0669624DDCD9100405B7A /* ModalActionsheet.swift in Sources */,
 				DABC492624DC5F0500570BAC /* Lagring.swift in Sources */,
 				DABC489C24D83DF300570BAC /* SceneDelegate.swift in Sources */,
 				DABC492324DC269600570BAC /* LeggTilVareCelle.swift in Sources */,
 				DABC48ED24D897B000570BAC /* LeggTilVareManuellMetodeKontroller.swift in Sources */,
 				DABC48B124D83E6E00570BAC /* VarerKontroller.swift in Sources */,
-				DAC0669924DDCD9100405B7A /* ModalActionsheetKontroller.swift in Sources */,
 				DABC48CE24D83F8B00570BAC /* Hjelpefunksjonar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +830,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DA51A25B24DF3A0C00AFD8A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA51A25424DF3A0C00AFD8A5 /* SkiilVarslingar */;
+			targetProxy = DA51A25A24DF3A0C00AFD8A5 /* PBXContainerItemProxy */;
+		};
 		DABC48DE24D84DD400570BAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DABC48D724D84DD400570BAC /* Tekstbilde */;
@@ -736,6 +864,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA51A25E24DF3A0C00AFD8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SkiilVarslingar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skilbreak.SkiilVarslingar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA51A25F24DF3A0C00AFD8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SkiilVarslingar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skilbreak.SkiilVarslingar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DABC48A824D83DF500570BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1075,6 +1262,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA51A26024DF3A0C00AFD8A5 /* Build configuration list for PBXNativeTarget "SkiilVarslingar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA51A25E24DF3A0C00AFD8A5 /* Debug */,
+				DA51A25F24DF3A0C00AFD8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DABC489124D83DF300570BAC /* Build configuration list for PBXProject "MatSpar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

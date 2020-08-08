@@ -15,7 +15,7 @@ class ModalActionsheetMeny: UIViewController, PickerViewDelegat {
     
     init(celler: [(String, Bool, UIImage?)]) {
         self.celler = celler
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: bundle)
     }
     
     required init?(coder: NSCoder) {
@@ -25,7 +25,12 @@ class ModalActionsheetMeny: UIViewController, PickerViewDelegat {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .groupTableViewBackground
+        if #available(iOS 13.0, *) {
+            self.view.backgroundColor = .systemGroupedBackground
+        } else {
+            // Fallback on earlier versions
+            self.view.backgroundColor = .groupTableViewBackground
+        }
         
         pickerView = PickerView()
         pickerView.celler = celler.compactMap { $0.0 }
@@ -33,10 +38,10 @@ class ModalActionsheetMeny: UIViewController, PickerViewDelegat {
         
         self.view.addSubview(pickerView)
         pickerView.translatesAutoresizingMaskIntoConstraints = NO
-        constrDekkView(view: pickerView)
+        pickerView.constrDekkView()
         
         self.navigationController?.navigationBar.topItem?.title = " "
-        self.navigationController?.navigationBar.tintColor = tema
+        self.navigationController?.navigationBar.tintColor = .tema
         
     }
     

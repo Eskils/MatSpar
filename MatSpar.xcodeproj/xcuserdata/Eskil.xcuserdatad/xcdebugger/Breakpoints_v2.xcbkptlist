@@ -62,8 +62,8 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
             landmarkName = "leggTilKnapp(ikon:action:layoutHandler:synlegFor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "MatSpar/Kontrollerar/VareDetalj/VareDetaljKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "leggTilKnapp(ikon:action:layoutHandler:synlegFor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -208,8 +208,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
             endingLineNumber = "131"
-            landmarkName = "bytMetode()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -224,8 +224,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
             endingLineNumber = "129"
-            landmarkName = "bytMetode()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -240,8 +240,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -256,8 +256,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
             endingLineNumber = "140"
-            landmarkName = "lukk()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -408,7 +408,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "39C65EC1-AA29-4DA4-84C3-7E9EEC705776"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
@@ -813,8 +813,8 @@
             filePath = "MatSpar/Hjelpefunksjonar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "vare()"
             landmarkType = "7">
          </BreakpointContent>
@@ -829,8 +829,8 @@
             filePath = "MatSpar/Hjelpefunksjonar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "vare()"
             landmarkType = "7">
          </BreakpointContent>
@@ -845,8 +845,8 @@
             filePath = "MatSpar/Kontrollerar/VareDetalj/VareDetaljKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -865,6 +865,102 @@
             endingLineNumber = "87"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "956D588F-93D9-4B23-89AB-F13C9DECFBB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Designables.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "vertikalLayout(_:view:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CB11A81-5B47-40FF-8AF6-17A39CC208A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Designables.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "vertikalLayout(_:view:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64A2FAAE-752A-4B0B-8C00-D402B60B9E4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "s&#xf8;kEtterVare(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F36C3C2D-4A0E-4A12-B800-BD4E819B1F8E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "s&#xf8;kEtterVare(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F36C3C2D-4A0E-4A12-B800-BD4E819B1F8E - 3d0ae97a1e020a70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Verdensrommet.S&#xf8;keforslagResultat&gt;&gt;) -&gt; () in MatSpar.LeggTilVareManuellMetodeKontroller.s&#xf8;kEtterVare(sender: MatSpar.IconifisertTextField) -&gt; ()"
+                  moduleName = "MatSpar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eskil/Documents/Prosjekt/Xcode/Git/MatSpar/MatSpar/MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "F36C3C2D-4A0E-4A12-B800-BD4E819B1F8E - f0b1d79abb9d638e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Verdensrommet.S&#xf8;keforslagResultat) -&gt; Swift.Optional&lt;Verdensrommet.S&#xf8;keforslagResultat.S&#xf8;keforslagInnhaldskjelde.S&#xf8;keforslagInnhald&gt; in closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;Verdensrommet.S&#xf8;keforslagResultat&gt;&gt;) -&gt; () in MatSpar.LeggTilVareManuellMetodeKontroller.s&#xf8;kEtterVare(sender: MatSpar.IconifisertTextField) -&gt; ()"
+                  moduleName = "MatSpar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eskil/Documents/Prosjekt/Xcode/Git/MatSpar/MatSpar/MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
