@@ -56,7 +56,7 @@ fileprivate enum LeggTilMetode {
 
 class LeggTilVareKontroller: UIViewController, LeggTilVareMetodeKontrollerDelegat {
     
-    var delegat: LeggTilVareDelegat?
+    public var delegat: LeggTilVareDelegat?
     
     private var leggTilMetode: LeggTilMetode = .manuelt {
         didSet {
@@ -85,7 +85,7 @@ class LeggTilVareKontroller: UIViewController, LeggTilVareMetodeKontrollerDelega
         }
     }
     
-    var transContainer: UIView?
+    private var transContainer: UIView?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -118,7 +118,7 @@ class LeggTilVareKontroller: UIViewController, LeggTilVareMetodeKontrollerDelega
         leggTilMetode = .manuelt
     }
     
-    @objc func bytMetode() {
+    @objc private func bytMetode() {
         if let strekkodeView = metodeKontroller as? LeggTilVareStrekkodeMetodeKontroller {
             strekkodeView.skalByteView()
         }
@@ -140,7 +140,7 @@ class LeggTilVareKontroller: UIViewController, LeggTilVareMetodeKontrollerDelega
         delegat?.avbrøytLeggTilVarer(self)
     }
     
-    var nyeVarer: [Vare] = []
+    private var nyeVarer: [Vare] = []
     
     func brukarLaTilVare(vare: Vare, kanLeggeTilFleire: Bool) {
         nyeVarer.append(vare)

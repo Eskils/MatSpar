@@ -20,6 +20,8 @@ class VareDetaljKontroller: UIViewController {
     
     var spinner: UIActivityIndicatorView!
     var meirKnapp: NavigationKnapp!
+    var leggTillKnapp: NavigationKnapp!
+    var navBarKnappDelegatKontroller: NavBarKnappDelegateController!
     
     
     init(vare: Vare, kontroller: VarerKontroller) {
@@ -64,6 +66,7 @@ class VareDetaljKontroller: UIViewController {
         //NavBar tittel & Bilde
         self.title = vare.tittel
         imageView.image = vare.presbilde(fallbacsize: imageView.frame.size)
+        navBarKnappDelegatKontroller = NavBarKnappDelegateController(navBar: self.navigationController!)
         
         //Table View oppset
         tableView.delegate = self
@@ -130,8 +133,12 @@ class VareDetaljKontroller: UIViewController {
         //Timer.scheduledTimer(withTimeInterval: 0.05, repeats: NO) { [self] (_) in
         //UIView.animate(withDuration: 0.5) { [self] in
             let ikon = #imageLiteral(resourceName: "round_more_vert_black_36pt")
-            meirKnapp = (self.navigationController?.leggTilKnapp(ikon: ikon, action: Action(target: self, selector: #selector(meir)), layoutHandler: .trailing, synlegFor: [self]))!
+            meirKnapp = (self.navigationController?.leggTilKnapp(ikon: ikon, action: Action(target: self, selector: #selector(meir)), layoutHandler: .trailing, synlegFor: [self], delegatKontroller: navBarKnappDelegatKontroller))!
             meirKnapp.alpha = 0
+        
+        let leggTillIkon = UIImage(systemName: "cart.badge.plus", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
+        leggTillKnapp = (self.navigationController?.leggTilKnapp(ikon: leggTillIkon, action: Action(target: self, selector: #selector(leggTill)), layoutHandler: .over(meirKnapp), synlegFor: [self], delegatKontroller: navBarKnappDelegatKontroller))!
+        leggTillKnapp.alpha = 0
             
             self.navigationController?.leggTilView(spinner, layoutHandler: .vedSidanAv(meirKnapp))
         //}
@@ -141,10 +148,25 @@ class VareDetaljKontroller: UIViewController {
         }, completion: nil)
     }
     
+    @objc func leggTill() {
+        guard let billegast = tilbodar.sorted(by: { $0.faktiskPris() < $1.faktiskPris() }).first else { return }
+        let handlelistevare = HandlelisteVare(vare: self.vare, tilbod: billegast)
+        
+        Lagring.handlelisteVare.lagre(verdi: handlelistevare, overstyrNøkkel: handlelistevare.id)
+        Lagring.handleliste.leggTilIListe(verdi: handlelistevare.id)
+        
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+    }
+    
     @objc func meir() {
         let picker = ModalActionsheetKontroller()
-        let ikon = UIImage(systemName: "trash", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
-        picker.addAction(tittel: "Slett", bilde: ikon, target: self, selector: #selector(slettVare))
+        
+        let slettIkon = UIImage(systemName: "trash", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
+        picker.addAction(tittel: "Slett", bilde: slettIkon, target: self, selector: #selector(slettVare))
+        
+        let leggTillIkon = UIImage(systemName: "cart.badge.plus", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
+        picker.addAction(tittel: "Legg til i handleliste", bilde: leggTillIkon, target: self, selector: #selector(leggTill))
+        
         picker.modalPresentationStyle = .overFullScreen
         self.navigationController?.present(picker, animated: NO, completion: nil)
     }

@@ -36,6 +36,15 @@ func rad<T:BinaryFloatingPoint>(_ vinkel: T) -> T {
     return T(Double.pi / 180) * vinkel
 }
 
+extension Array where Element == HandlelisteVare {
+    func contains(_ vare: Vare) -> Bool {
+        for el in self {
+            if el == vare { return YES }
+        }
+        return NO
+    }
+}
+
 extension UIColor {
     static var celle: UIColor {
         if #available(iOS 11.0, *) {
@@ -103,7 +112,7 @@ extension SøkeforslagResultat.SøkeforslagInnhaldskjelde.SøkeforslagInnhald {
     func vare() -> Vare {
         let kategori = Varekategori(rawValue: self.categoryName) ?? .Anna
         print(self.categoryName, kategori.rawValue)
-        let vare = Vare(bilde: self.bilde(siz: 200), tittel: self.title, eanKode: Int(self.ean)!, kategori: kategori, antalTilbod: self.promotions.count)
+        let vare = Vare(bilde: self.bilde(siz: 200), tittel: self.title, eanKode: Int(self.ean)!, kategori: kategori, levrandør: self.vendor)
         return vare
     }
 }

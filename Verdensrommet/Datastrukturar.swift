@@ -55,7 +55,7 @@ struct AutosuggestForespørselkonfigurasjon {
     
 }
 
-public enum Butikk {
+public enum Butikk: String, Codable, Hashable {
     case spar, joker, meny
     
     public var beskrivelse: Butikkbeskrivelse {

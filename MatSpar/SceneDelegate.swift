@@ -20,24 +20,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let winScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow(windowScene: winScene)
-        
-        let vc = VarerKontroller()
-        
-        /*vc.varer = [Vare(tittel: "Agurk"),
-                    Vare(tittel: "Egg"),
-                    Vare(tittel: "Kjøttdeig"),
-                    Vare(tittel: "Juice"),
-                    Vare(tittel: "Epler"),
-                    Vare(tittel: "Kotelett"),
-                    Vare(tittel: "Melk"),
-                    Vare(tittel: "Paprika")]*/
-        
         butikkManager = ButikkManager()
         
-        let nav = UINavigationController(rootViewController: vc)
-        nav.navigationBar.tintColor = .app
-        window?.rootViewController = nav
+        window = UIWindow(windowScene: winScene)
+        
+        let varer = VarerKontroller()
+        let varerNav = UINavigationController(rootViewController: varer)
+        varerNav.navigationBar.tintColor = .app
+        
+        let handleliste = HandlelisteKontroller()
+        let handlelisteNav = UINavigationController(rootViewController: handleliste)
+        handlelisteNav.navigationBar.tintColor = .app
+        
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [varerNav, handlelisteNav]
+        tabBar.tabBar.items?[0].image = varer.barItem.image
+        tabBar.tabBar.items?[0].title = varer.barItem.title
+        tabBar.tabBar.items?[1].image = handleliste.barItem.image
+        tabBar.tabBar.items?[1].title = handleliste.barItem.title
+        
+        tabBar.tabBar.tintColor = .app
+        
+        window?.rootViewController = tabBar
         
         window?.makeKeyAndVisible()
     }

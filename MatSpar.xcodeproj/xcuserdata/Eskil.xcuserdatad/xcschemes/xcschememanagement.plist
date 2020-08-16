@@ -7,27 +7,32 @@
 		<key>Biilde.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>MatSpar.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>OrderedDictionary.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SkiilVarslingar.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Tekstbilde.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Verdensrommet.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

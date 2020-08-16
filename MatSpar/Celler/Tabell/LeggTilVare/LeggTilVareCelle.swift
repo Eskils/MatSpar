@@ -9,26 +9,44 @@ import UIKit
 import Verdensrommet
 import Biilde
 
+class LeggTilVareCelledata {
+    typealias Varedata = SøkeforslagResultat.SøkeforslagInnhaldskjelde.SøkeforslagInnhald
+    var vare : Varedata
+    var action: Action?
+    var bilde: UIImage?
+    var knappikon: UIImage = UIImage(systemName: "plus", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))!
+    var erKnappAktiv: Bool = YES
+    
+    init(vare: Varedata, action: Action?, bilde: UIImage?=nil) {
+        self.vare = vare
+        self.action = action
+        self.bilde = bilde
+    }
+}
+
 class LeggTilVareCelle: UITableViewCell, BildeDelegat {
     
     @IBOutlet var bildeView: UIImageView!
     @IBOutlet var tittelLabel: UILabel!
+    @IBOutlet var undertittelLabel: UILabel!
     @IBOutlet var addKnapp: IconKnapp!
     
-    var celledata: SøkeforslagResultat.SøkeforslagInnhaldskjelde.SøkeforslagInnhald?
-    var action: Action?
+    var celledata: LeggTilVareCelledata?
     fileprivate weak var bilde: UIImage? {
         didSet {
+            celledata?.bilde = bilde
             bildeView.image = bilde
         }
     }
     var knappikon = UIImage(systemName: "plus", withConfiguration: UIImage.SymbolConfiguration(weight: .medium))! {
         didSet {
+            celledata?.knappikon = knappikon
             addKnapp.icon = knappikon
         }
     }
     var knappAktiv: Bool = YES {
         didSet {
+            celledata?.erKnappAktiv = knappAktiv
             if knappAktiv == NO {
                 addKnapp.action = nil
             }
@@ -41,6 +59,8 @@ class LeggTilVareCelle: UITableViewCell, BildeDelegat {
         
         self.backgroundColor = .clear
         self.contentView.backgroundColor = .clear
+        
+        konfig()
     }
     
     override func didMoveToSuperview() {
@@ -60,17 +80,18 @@ class LeggTilVareCelle: UITableViewCell, BildeDelegat {
         guard let data = celledata else { return }
         
         if bilde == nil {
-            let bilde = data.bilde(siz: Int(bildeView.frame.height * 2))
+            let bilde = data.vare.bilde(siz: Int(bildeView.frame.height * 2))
             bilde.delegat = self
             bilde.last()
         }else {
-            bildeView.image = bilde
+            bildeView.image = data.bilde
         }
         
-        tittelLabel.text = data.title
-        addKnapp.icon = knappikon
-        if knappAktiv {
-            addKnapp.action = action
+        tittelLabel.text = data.vare.title
+        undertittelLabel.text = data.vare.vendor
+        addKnapp.icon = data.knappikon
+        if data.erKnappAktiv {
+            addKnapp.action = data.action
         }
     }
     

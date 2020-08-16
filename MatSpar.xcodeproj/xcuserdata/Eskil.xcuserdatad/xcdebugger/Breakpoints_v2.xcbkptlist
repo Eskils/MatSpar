@@ -62,10 +62,10 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "301"
-            endingLineNumber = "301"
-            landmarkName = "leggTilKnapp(ikon:action:layoutHandler:synlegFor:)"
-            landmarkType = "7">
+            startingLineNumber = "332"
+            endingLineNumber = "332"
+            landmarkName = "UINavigationController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +78,8 @@
             filePath = "MatSpar/Kontrollerar/VareDetalj/VareDetaljKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "MatSpar/Kontrollerar/Varer/VarerKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,9 +126,9 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "293"
-            endingLineNumber = "293"
-            landmarkName = "leggTilKnapp(ikon:action:layoutHandler:synlegFor:)"
+            startingLineNumber = "323"
+            endingLineNumber = "323"
+            landmarkName = "leggTilKnapp(ikon:action:layoutHandler:synlegFor:delegatKontroller:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -142,8 +142,8 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "didMoveToSuperview()"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "didMoveToSuperview()"
             landmarkType = "7">
          </BreakpointContent>
@@ -208,8 +208,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
             endingLineNumber = "131"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "bytMetode()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -224,8 +224,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
             endingLineNumber = "129"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "bytMetode()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -240,8 +240,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -256,8 +256,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "140"
             endingLineNumber = "140"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "lukk()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,8 +270,8 @@
             filePath = "MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -382,8 +382,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "hentToken(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -398,8 +398,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "hentS&#xf8;keforslag(til:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -414,8 +414,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "faktiskUtf&#xf8;rMission(mission:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -526,8 +526,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "leggTilMission(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -638,8 +638,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -654,8 +654,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -670,8 +670,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -686,8 +686,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
             <Locations>
@@ -765,8 +765,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -781,8 +781,8 @@
             filePath = "MatSpar/Kontrollerar/Varer/VarerKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "varer"
             landmarkType = "24">
          </BreakpointContent>
@@ -813,8 +813,8 @@
             filePath = "MatSpar/Hjelpefunksjonar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "vare()"
             landmarkType = "7">
          </BreakpointContent>
@@ -829,8 +829,8 @@
             filePath = "MatSpar/Hjelpefunksjonar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "vare()"
             landmarkType = "7">
          </BreakpointContent>
@@ -845,8 +845,8 @@
             filePath = "MatSpar/Kontrollerar/VareDetalj/VareDetaljKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -861,8 +861,8 @@
             filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "hentVare(fr&#xe5;Strekkode:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -877,8 +877,8 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
             landmarkName = "vertikalLayout(_:view:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -893,8 +893,8 @@
             filePath = "MatSpar/Designables.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "275"
-            endingLineNumber = "275"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
             landmarkName = "vertikalLayout(_:view:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -909,8 +909,8 @@
             filePath = "MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "s&#xf8;kEtterVare(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -925,8 +925,8 @@
             filePath = "MatSpar/Kontrollerar/LeggTilVare/ManuellMetode/LeggTilVareManuellMetodeKontroller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "s&#xf8;kEtterVare(sender:)"
             landmarkType = "7">
             <Locations>
@@ -961,6 +961,438 @@
                   offsetFromSymbolStart = "36">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3159911E-5C44-4CE8-B9C2-6DB747899DD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77758367-A113-4AC8-B0F1-281296D752CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00F72951-AF7C-488A-87EE-DB0BD6ECF361"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D71A0B76-E248-4957-9220-B32786908148"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CAE3D75-385A-478B-8205-53FB34D966F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Lagring.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "leggTilIListe(verdi:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AED58D2-45F5-482F-A91F-C206C8D0DD6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "sorterteCeller"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F89A3D56-DF58-4F74-B553-A6718F1B925E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "celler"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "156DA13D-3685-4962-A3F8-7F74AF7210C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrderedDictionary/OrderedDict.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "n&#xf8;klarOgVerdiar"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C477025B-E236-46FC-AF50-E76B68EFD3FA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Designables.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "navigationController(_:willShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BA5B182-6300-43EB-981B-13489D83FB9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Designables.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "sjekkKnapp(vc:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1FDAAB0-4CA5-4207-8BB7-B696AEC8AAF1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Designables.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
+            landmarkName = "leggTilKnapp(ikon:action:layoutHandler:synlegFor:delegatKontroller:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "516DDDC0-23FB-41E9-8414-7860F253C5D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Designables.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "navigationController(_:willShow:animated:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABE7D48D-BB55-4956-904D-CF49993E5B62"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "lagreToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAE8F026-98AF-4946-B902-BA1C29B4AC8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "lagreToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A73626A0-0243-4B1B-A33B-265A3C68EE8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "hentLagraToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33F4B8B7-26D4-4EFF-A645-73BB4A9F40CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Verdensrommet/MatSparIVerdensrommet.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "hentLagraToken()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9576672D-430F-4A2B-9F2A-3494E1EA9445"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "skalForfriskeTilbod()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1F7877C-3694-4320-99B6-08BABEA28610"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "skalForfriskeTilbod()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "209600B1-E167-4035-9688-FAE06AB587A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "skalForfriskeTilbod()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "526E787B-1F5F-45B2-B364-15A05CBE0B9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "424C9307-B266-4C8D-9882-EA07E1F90DC9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "424C9307-B266-4C8D-9882-EA07E1F90DC9 - ecbd85410beeb1c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MatSpar.HandlelisteKontroller.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "MatSpar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eskil/Documents/Prosjekt/Xcode/Git/MatSpar/MatSpar/MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "792">
+               </Location>
+               <Location
+                  uuid = "424C9307-B266-4C8D-9882-EA07E1F90DC9 - bc5fec918d7a9632"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;MatSpar.HandlelisteVare&gt;) -&gt; () in MatSpar.HandlelisteKontroller.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "MatSpar"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Eskil/Documents/Prosjekt/Xcode/Git/MatSpar/MatSpar/MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B645441-F5EE-49F9-9538-5D38E1DEFC39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/HandlelisteKontroller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "528E21AF-BFF8-472D-93F4-C04DA6A65080"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/Handleliste+TableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "tableView(_:leadingSwipeActionsConfigurationForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "534FD402-2129-4F43-9A75-272250C6C45E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/Handleliste+TableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4583B0F-7B34-4CB6-A615-BB0EDA91F1C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MatSpar/Kontrollerar/Handleliste/Handleliste+TableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

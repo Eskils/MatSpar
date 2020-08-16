@@ -24,9 +24,20 @@ class LeggTilVareManuellMetodeKontroller: UIViewController, LeggTilVareMetodeKon
     
     var navBarHøgd: CGFloat!
     
-    var celler: [Resultatinnhald] = [] {
+    var celler: [LeggTilVareCelledata] = [] {
         didSet {
             tableView.reloadData()
+        }
+    }
+    
+    var resultat: [Resultatinnhald] = [] {
+        didSet {
+            var nyeCeller: [LeggTilVareCelledata] = []
+            self.resultat.forEach { res in
+                let celledata = LeggTilVareCelledata(vare: res, action: nil)
+                nyeCeller.append(celledata)
+            }
+            self.celler = nyeCeller
         }
     }
     
@@ -66,9 +77,9 @@ class LeggTilVareManuellMetodeKontroller: UIViewController, LeggTilVareMetodeKon
             DispatchQueue.main.async {
                 if (resultat != nil) && !(resultat!.isEmpty)  {
                     self.statusLabel.isHidden = YES
-                    self.celler = resultat!.compactMap { $0.contentData._source }
+                    self.resultat = resultat!.compactMap { $0.contentData._source }
                 }else {
-                    self.celler = []
+                    self.resultat = []
                     self.statusLabel.isHidden = NO
                     self.statusLabel.text = "Fann ingen varer."
                 }
@@ -90,7 +101,7 @@ class LeggTilVareManuellMetodeKontroller: UIViewController, LeggTilVareMetodeKon
         haptikk.prepare()
         haptikk.notificationOccurred(.success)
         
-        let vare = celle.celledata!.vare()
+        let vare = celle.celledata!.vare.vare()
         harLagtTilVarer = YES
         delegat?.brukarLaTilVare(vare: vare, kanLeggeTilFleire: YES)
     }

@@ -16,8 +16,9 @@ extension LeggTilVareManuellMetodeKontroller: UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let celle = tableView.dequeueReusableCell(withIdentifier: "celle") as? LeggTilVareCelle else { fatalError() }
         
+        let act = Action(target: self, selector: #selector(leggTilVare(_:)), sender: celle)
+        celler[indexPath.row].action = act
         celle.celledata = celler[indexPath.row]
-        celle.action = Action(target: self, selector: #selector(leggTilVare(_:)), sender: celle)
         
         return celle
     }

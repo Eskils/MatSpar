@@ -54,25 +54,39 @@ fileprivate func slett(nøkkel: String) {
 enum Lagring: String {
     case varer
     case vare
-    case butikkTokens
+    case handlelisteSistOppdatert
+    case handleliste
+    case handlelisteVare
     
     var type: Any.Type {
         switch self {
             case .varer:
                 return [String].self
-            case .vare:
+            case .vare: 
                 return Vare.self
-            case .butikkTokens:
+            case .handlelisteSistOppdatert:
+                return TimeInterval.self
+            case .handleliste:
                 return [String].self
+            case .handlelisteVare:
+                return HandlelisteVare.self
         }
     }
 }
 
 extension Lagring {
     func lagre<T:Encodable>(verdi: T, overstyrNøkkel nøkkel: String?=nil) {
-        if T.self != self.type { fatalError("Feil type for nøkkelen, vart sendt til lagring") }
+        if T.self != self.type { fatalError("Feil type for nøkkelen vart sendt til lagring") }
         MatSpar.lagre(verdi, nøkkel: nøkkel ?? self.rawValue)
     }
+    
+    func leggTilIListe<T:Codable>(verdi: T) {
+        if [T].self != self.type { fatalError("Feil type for nøkkelen vart sendt til lagring") }
+        var arr: [T] = lastInn(nøkkel: self.rawValue) ?? []
+        arr.append(verdi)
+        MatSpar.lagre(arr, nøkkel: self.rawValue)
+    }
+    
     
     func hent<T:Decodable>() -> T? {
         return lastInn(nøkkel: self.rawValue)

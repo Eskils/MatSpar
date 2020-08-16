@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3ED9BE24E9889A008B669A /* Hjelpefunskjonar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3ED9BD24E9889A008B669A /* Hjelpefunskjonar.swift */; };
 		DA51A25924DF3A0C00AFD8A5 /* SkiilVarslingar.h in Headers */ = {isa = PBXBuildFile; fileRef = DA51A25724DF3A0C00AFD8A5 /* SkiilVarslingar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA51A25C24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */; };
 		DA51A25D24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -25,6 +26,16 @@
 		DA51A27524DF3B8D00AFD8A5 /* PickerView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51A27024DF3B8D00AFD8A5 /* PickerView+TableView.swift */; };
 		DA51A27624DF3B8D00AFD8A5 /* PickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA51A27124DF3B8D00AFD8A5 /* PickerView.xib */; };
 		DA51A27824DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA51A27724DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets */; };
+		DA6406E324E87AAB00C06EA7 /* OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6406E124E87AAB00C06EA7 /* OrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6406E624E87AAB00C06EA7 /* OrderedDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6406DF24E87AAB00C06EA7 /* OrderedDictionary.framework */; };
+		DA6406E724E87AAB00C06EA7 /* OrderedDictionary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6406DF24E87AAB00C06EA7 /* OrderedDictionary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA6406EC24E87AC100C06EA7 /* DCVerdi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6406EB24E87AC100C06EA7 /* DCVerdi.swift */; };
+		DA6406EE24E87ACD00C06EA7 /* OrderedDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6406ED24E87ACD00C06EA7 /* OrderedDict.swift */; };
+		DAB3BC1524E17A6800D9845C /* HandlelisteCelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3BC1324E17A6800D9845C /* HandlelisteCelle.swift */; };
+		DAB3BC1624E17A6800D9845C /* HandlelisteCelle.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB3BC1424E17A6800D9845C /* HandlelisteCelle.xib */; };
+		DAB3BC1924E17D5600D9845C /* HandlelisteKontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3BC1724E17D5600D9845C /* HandlelisteKontroller.swift */; };
+		DAB3BC1A24E17D5600D9845C /* HandlelisteKontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB3BC1824E17D5600D9845C /* HandlelisteKontroller.xib */; };
+		DAB3BC1C24E18A0B00D9845C /* Handleliste+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB3BC1B24E18A0B00D9845C /* Handleliste+TableView.swift */; };
 		DABC489A24D83DF300570BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC489924D83DF300570BAC /* AppDelegate.swift */; };
 		DABC489C24D83DF300570BAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC489B24D83DF300570BAC /* SceneDelegate.swift */; };
 		DABC48A324D83DF500570BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABC48A224D83DF500570BAC /* Assets.xcassets */; };
@@ -80,6 +91,13 @@
 			remoteGlobalIDString = DA51A25424DF3A0C00AFD8A5;
 			remoteInfo = SkiilVarslingar;
 		};
+		DA6406E424E87AAB00C06EA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DABC488E24D83DF300570BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6406DE24E87AAB00C06EA7;
+			remoteInfo = OrderedDictionary;
+		};
 		DABC48DD24D84DD400570BAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DABC488E24D83DF300570BAC /* Project object */;
@@ -113,6 +131,7 @@
 				DABC490424DB0E2A00570BAC /* Verdensrommet.framework in Embed Frameworks */,
 				DABC491A24DB3B1900570BAC /* Biilde.framework in Embed Frameworks */,
 				DA51A25D24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Embed Frameworks */,
+				DA6406E724E87AAB00C06EA7 /* OrderedDictionary.framework in Embed Frameworks */,
 				DABC48E024D84DD400570BAC /* Tekstbilde.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -121,6 +140,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA3ED9BD24E9889A008B669A /* Hjelpefunskjonar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hjelpefunskjonar.swift; sourceTree = "<group>"; };
 		DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkiilVarslingar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA51A25724DF3A0C00AFD8A5 /* SkiilVarslingar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkiilVarslingar.h; sourceTree = "<group>"; };
 		DA51A25824DF3A0C00AFD8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +151,16 @@
 		DA51A27024DF3B8D00AFD8A5 /* PickerView+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PickerView+TableView.swift"; sourceTree = "<group>"; };
 		DA51A27124DF3B8D00AFD8A5 /* PickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerView.xib; sourceTree = "<group>"; };
 		DA51A27724DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = round_more_vert_black_36pt.xcassets; sourceTree = "<group>"; };
+		DA6406DF24E87AAB00C06EA7 /* OrderedDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrderedDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6406E124E87AAB00C06EA7 /* OrderedDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		DA6406E224E87AAB00C06EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6406EB24E87AC100C06EA7 /* DCVerdi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCVerdi.swift; sourceTree = "<group>"; };
+		DA6406ED24E87ACD00C06EA7 /* OrderedDict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedDict.swift; sourceTree = "<group>"; };
+		DAB3BC1324E17A6800D9845C /* HandlelisteCelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlelisteCelle.swift; sourceTree = "<group>"; };
+		DAB3BC1424E17A6800D9845C /* HandlelisteCelle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandlelisteCelle.xib; sourceTree = "<group>"; };
+		DAB3BC1724E17D5600D9845C /* HandlelisteKontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlelisteKontroller.swift; sourceTree = "<group>"; };
+		DAB3BC1824E17D5600D9845C /* HandlelisteKontroller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandlelisteKontroller.xib; sourceTree = "<group>"; };
+		DAB3BC1B24E18A0B00D9845C /* Handleliste+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Handleliste+TableView.swift"; sourceTree = "<group>"; };
 		DABC489624D83DF300570BAC /* MatSpar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatSpar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABC489924D83DF300570BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABC489B24D83DF300570BAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +226,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA6406DC24E87AAB00C06EA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC489324D83DF300570BAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +240,7 @@
 				DABC490324DB0E2A00570BAC /* Verdensrommet.framework in Frameworks */,
 				DABC491924DB3B1900570BAC /* Biilde.framework in Frameworks */,
 				DA51A25C24DF3A0C00AFD8A5 /* SkiilVarslingar.framework in Frameworks */,
+				DA6406E624E87AAB00C06EA7 /* OrderedDictionary.framework in Frameworks */,
 				DABC48DF24D84DD400570BAC /* Tekstbilde.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +300,36 @@
 			path = Celle;
 			sourceTree = "<group>";
 		};
+		DA6406E024E87AAB00C06EA7 /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				DA6406E124E87AAB00C06EA7 /* OrderedDictionary.h */,
+				DA6406E224E87AAB00C06EA7 /* Info.plist */,
+				DA6406EB24E87AC100C06EA7 /* DCVerdi.swift */,
+				DA6406ED24E87ACD00C06EA7 /* OrderedDict.swift */,
+			);
+			path = OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		DAB3BC1124E17A3D00D9845C /* Handleliste */ = {
+			isa = PBXGroup;
+			children = (
+				DAB3BC1724E17D5600D9845C /* HandlelisteKontroller.swift */,
+				DAB3BC1B24E18A0B00D9845C /* Handleliste+TableView.swift */,
+				DAB3BC1824E17D5600D9845C /* HandlelisteKontroller.xib */,
+			);
+			path = Handleliste;
+			sourceTree = "<group>";
+		};
+		DAB3BC1224E17A5000D9845C /* Handleliste */ = {
+			isa = PBXGroup;
+			children = (
+				DAB3BC1324E17A6800D9845C /* HandlelisteCelle.swift */,
+				DAB3BC1424E17A6800D9845C /* HandlelisteCelle.xib */,
+			);
+			path = Handleliste;
+			sourceTree = "<group>";
+		};
 		DABC488D24D83DF300570BAC = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +339,7 @@
 				DABC48FD24DB0E2A00570BAC /* Verdensrommet */,
 				DABC491324DB3B1900570BAC /* Biilde */,
 				DA51A25624DF3A0C00AFD8A5 /* SkiilVarslingar */,
+				DA6406E024E87AAB00C06EA7 /* OrderedDictionary */,
 				DABC489724D83DF300570BAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -283,6 +352,7 @@
 				DABC48FC24DB0E2A00570BAC /* Verdensrommet.framework */,
 				DABC491224DB3B1900570BAC /* Biilde.framework */,
 				DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */,
+				DA6406DF24E87AAB00C06EA7 /* OrderedDictionary.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -310,6 +380,7 @@
 		DABC48AE24D83E1500570BAC /* Kontrollerar */ = {
 			isa = PBXGroup;
 			children = (
+				DAB3BC1124E17A3D00D9845C /* Handleliste */,
 				DABC48B424D83E7F00570BAC /* LeggTilVare */,
 				DABC48B324D83E7000570BAC /* Varer */,
 				DABC48B924D83EB000570BAC /* VareDetalj */,
@@ -360,7 +431,8 @@
 		DABC48BF24D83EEA00570BAC /* Tabell */ = {
 			isa = PBXGroup;
 			children = (
-				DABC492B24DD85EC00570BAC /* TilbodCelle */,
+				DAB3BC1224E17A5000D9845C /* Handleliste */,
+				DABC492B24DD85EC00570BAC /* Tilbod */,
 				DABC492024DC267300570BAC /* LeggTilVare */,
 				DABC48C624D83F2B00570BAC /* Vare */,
 			);
@@ -427,6 +499,7 @@
 			children = (
 				DABC490924DB0E8500570BAC /* Datastrukturar.swift */,
 				DABC48F524DB0DF200570BAC /* MatSparIVerdensrommet.swift */,
+				DA3ED9BD24E9889A008B669A /* Hjelpefunskjonar.swift */,
 				DABC490B24DB0FBC00570BAC /* JSON.swift */,
 				DABC48FE24DB0E2A00570BAC /* Verdensrommet.h */,
 				DABC48FF24DB0E2A00570BAC /* Info.plist */,
@@ -462,13 +535,13 @@
 			path = "Interbyggmålt";
 			sourceTree = "<group>";
 		};
-		DABC492B24DD85EC00570BAC /* TilbodCelle */ = {
+		DABC492B24DD85EC00570BAC /* Tilbod */ = {
 			isa = PBXGroup;
 			children = (
 				DABC492C24DD860600570BAC /* TilbodCelle.swift */,
 				DABC492D24DD860600570BAC /* TilbodCelle.xib */,
 			);
-			path = TilbodCelle;
+			path = Tilbod;
 			sourceTree = "<group>";
 		};
 		DAC0668724DDCD6500405B7A /* Hjelpekontrollerar */ = {
@@ -530,6 +603,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA6406DA24E87AAB00C06EA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6406E324E87AAB00C06EA7 /* OrderedDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC48D324D84DD400570BAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,6 +656,24 @@
 			productReference = DA51A25524DF3A0C00AFD8A5 /* SkiilVarslingar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DA6406DE24E87AAB00C06EA7 /* OrderedDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA6406E824E87AAB00C06EA7 /* Build configuration list for PBXNativeTarget "OrderedDictionary" */;
+			buildPhases = (
+				DA6406DA24E87AAB00C06EA7 /* Headers */,
+				DA6406DB24E87AAB00C06EA7 /* Sources */,
+				DA6406DC24E87AAB00C06EA7 /* Frameworks */,
+				DA6406DD24E87AAB00C06EA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderedDictionary;
+			productName = OrderedDictionary;
+			productReference = DA6406DF24E87AAB00C06EA7 /* OrderedDictionary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		DABC489524D83DF300570BAC /* MatSpar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DABC48AA24D83DF500570BAC /* Build configuration list for PBXNativeTarget "MatSpar" */;
@@ -591,6 +690,7 @@
 				DABC490224DB0E2A00570BAC /* PBXTargetDependency */,
 				DABC491824DB3B1900570BAC /* PBXTargetDependency */,
 				DA51A25B24DF3A0C00AFD8A5 /* PBXTargetDependency */,
+				DA6406E524E87AAB00C06EA7 /* PBXTargetDependency */,
 			);
 			name = MatSpar;
 			productName = MatSpar;
@@ -664,6 +764,10 @@
 						CreatedOnToolsVersion = 12.0;
 						LastSwiftMigration = 1200;
 					};
+					DA6406DE24E87AAB00C06EA7 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
 					DABC489524D83DF300570BAC = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -698,6 +802,7 @@
 				DABC48FB24DB0E2A00570BAC /* Verdensrommet */,
 				DABC491124DB3B1900570BAC /* Biilde */,
 				DA51A25424DF3A0C00AFD8A5 /* SkiilVarslingar */,
+				DA6406DE24E87AAB00C06EA7 /* OrderedDictionary */,
 			);
 		};
 /* End PBXProject section */
@@ -715,6 +820,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA6406DD24E87AAB00C06EA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC489424D83DF300570BAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,10 +838,12 @@
 				DABC48BD24D83ED800570BAC /* VareDetaljKontroller.xib in Resources */,
 				DABC48C424D83F2000570BAC /* CollectionVareCelle.xib in Resources */,
 				DABC48F224D897C600570BAC /* LeggTilVareStrekkodeMetodeKontroller.xib in Resources */,
+				DAB3BC1624E17A6800D9845C /* HandlelisteCelle.xib in Resources */,
 				DA51A27824DF4FE900AFD8A5 /* round_more_vert_black_36pt.xcassets in Resources */,
 				DABC48EE24D897B000570BAC /* LeggTilVareManuellMetodeKontroller.xib in Resources */,
 				DABC48B224D83E6E00570BAC /* VarerKontroller.xib in Resources */,
 				DABC48A324D83DF500570BAC /* Assets.xcassets in Resources */,
+				DAB3BC1A24E17D5600D9845C /* HandlelisteKontroller.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +887,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA6406DB24E87AAB00C06EA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA6406EC24E87AC100C06EA7 /* DCVerdi.swift in Sources */,
+				DA6406EE24E87ACD00C06EA7 /* OrderedDict.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DABC489224D83DF300570BAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -785,9 +908,11 @@
 				DABC48D224D842D000570BAC /* Varer+CollectionView.swift in Sources */,
 				DABC48C924D83F4100570BAC /* TableVareCelle.swift in Sources */,
 				DABC48BC24D83ED800570BAC /* VareDetaljKontroller.swift in Sources */,
+				DAB3BC1524E17A6800D9845C /* HandlelisteCelle.swift in Sources */,
 				DABC492E24DD860600570BAC /* TilbodCelle.swift in Sources */,
 				DABC489A24D83DF300570BAC /* AppDelegate.swift in Sources */,
 				DABC48C324D83F2000570BAC /* CollectionVareCelle.swift in Sources */,
+				DAB3BC1C24E18A0B00D9845C /* Handleliste+TableView.swift in Sources */,
 				DABC48CC24D83F7800570BAC /* Designables.swift in Sources */,
 				DABC48F124D897C600570BAC /* LeggTilVareStrekkodeMetodeKontroller.swift in Sources */,
 				DABC493124DD8CBD00570BAC /* VareDetalj+TableView.swift in Sources */,
@@ -797,6 +922,7 @@
 				DABC48ED24D897B000570BAC /* LeggTilVareManuellMetodeKontroller.swift in Sources */,
 				DABC48B124D83E6E00570BAC /* VarerKontroller.swift in Sources */,
 				DABC48CE24D83F8B00570BAC /* Hjelpefunksjonar.swift in Sources */,
+				DAB3BC1924E17D5600D9845C /* HandlelisteKontroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +938,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3ED9BE24E9889A008B669A /* Hjelpefunskjonar.swift in Sources */,
 				DABC490C24DB0FBC00570BAC /* JSON.swift in Sources */,
 				DABC492A24DC6A6B00570BAC /* Varekategori.swift in Sources */,
 				DABC490A24DB0E8500570BAC /* Datastrukturar.swift in Sources */,
@@ -834,6 +961,11 @@
 			isa = PBXTargetDependency;
 			target = DA51A25424DF3A0C00AFD8A5 /* SkiilVarslingar */;
 			targetProxy = DA51A25A24DF3A0C00AFD8A5 /* PBXContainerItemProxy */;
+		};
+		DA6406E524E87AAB00C06EA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6406DE24E87AAB00C06EA7 /* OrderedDictionary */;
+			targetProxy = DA6406E424E87AAB00C06EA7 /* PBXContainerItemProxy */;
 		};
 		DABC48DE24D84DD400570BAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -914,6 +1046,65 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.skilbreak.SkiilVarslingar;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA6406E924E87AAB00C06EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OrderedDictionary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skilbreak.OrderedDictionary;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA6406EA24E87AAB00C06EA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EUKTZ7725R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OrderedDictionary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skilbreak.OrderedDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1267,6 +1458,15 @@
 			buildConfigurations = (
 				DA51A25E24DF3A0C00AFD8A5 /* Debug */,
 				DA51A25F24DF3A0C00AFD8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA6406E824E87AAB00C06EA7 /* Build configuration list for PBXNativeTarget "OrderedDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA6406E924E87AAB00C06EA7 /* Debug */,
+				DA6406EA24E87AAB00C06EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

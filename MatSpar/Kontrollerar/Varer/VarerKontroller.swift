@@ -10,10 +10,19 @@ import UIKit
 var harKonfigurertNavBar: Bool = false
 class VarerKontroller: UIViewController {
     
+    var barItem: UITabBarItem! {
+        UITabBarItem(title: "Varer", image: UIImage(systemName: "rectangle.stack")!, tag: 0)
+    }
+    
+    var ikon: UIImage {
+        UIImage(systemName: "rectangle.stack")!
+    }
+    
     @IBOutlet var collectionView: UICollectionView!
     
     var varer: [Vare] = [] {
         didSet {
+            varer.sort { $0.tittel < $1.tittel }
             if !varer.isEmpty { statusLabel.isHidden = YES }
             collectionView.reloadData()
         }
@@ -43,6 +52,7 @@ class VarerKontroller: UIViewController {
         super.viewDidLoad()
 
         self.title = "Varer"
+        self.tabBarItem = UITabBarItem(title: "Varer", image: UIImage(), tag: 0)
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self

@@ -17,7 +17,12 @@ extension VarerKontroller: LeggTilVareDelegat {
                 //Lagring.vare.lagre(verdi: <#T##Encodable#>, overstyrNøkkel: <#T##String?#>)
             }
         }*/
-        self.varer += varer
+        var nyeVarer: [Vare] = []
+        for vare in varer {
+            if self.varer.contains(vare) { continue }
+            nyeVarer.append(vare)
+        }
+        self.varer += nyeVarer
         lagreVarer()
     }
     

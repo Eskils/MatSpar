@@ -7,6 +7,27 @@
 
 import Foundation
 
+let ud = UserDefaults.standard
+
+struct LagringSessionToken: Codable {
+    private var stToken: String
+    var exp: TimeInterval
+    
+    init(token: String, utløpsstamp: TimeInterval) {
+        self.stToken = token
+        self.exp = utløpsstamp
+    }
+    
+    var token: String? {
+        let stamp = Date().timeIntervalSince1970
+        if self.exp > stamp {
+            return stToken
+        }else {
+            return nil
+        }
+    }
+}
+
 struct VerdensromMission {
     let url: URL
     let completion: DataCompletionHandler
@@ -37,6 +58,25 @@ public class MatSparIVerdensrommet {
     
     public init(butikk: Butikk) {
         self.butikk = butikk
+        hentLagraToken()
+    }
+    
+    /// Hentar inn lagra token for butikken, om ingen er lagra, eller tokenet er utløpt hender det ingenting.
+    private func hentLagraToken() {
+        let lagra: LagringSessionToken? = lastInn(nøkkel: self.butikk.rawValue + "Token")
+        self.sessionToken = lagra?.token
+        print(butikk.rawValue, lagra?.token)
+        self.sessionExpire = lagra?.exp
+    }
+    
+    /// Lagrar `self.sessionToken` som `LagringSessionToken` i UD. Kan hentast inn igjen med metoden `hentLagraToken`
+    private func lagreToken() {
+        guard let token = self.sessionToken,
+              let exp = self.sessionExpire
+        else { return }
+        
+        let lagring = LagringSessionToken(token: token, utløpsstamp: exp)
+        lagre(lagring, nøkkel: self.butikk.rawValue + "Token")
     }
     
     var missions: [VerdensromMission] = []
@@ -107,6 +147,7 @@ public class MatSparIVerdensrommet {
                 if kjeks.name == "_app_token_" {
                     self.sessionToken = kjeks.value
                     self.sessionExpire = Date().addingTimeInterval((15) * 60).timeIntervalSince1970
+                    self.lagreToken()
                 }
             }
             

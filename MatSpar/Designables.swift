@@ -201,25 +201,26 @@ import UIKit
 }
 
 class NavigationKnapp: IconKnapp, UINavigationControllerDelegate {
-    private var synlegeKontrollerar: [Int] = []
+    private var synlegeKontrollerar: [String] = []
     var navBar: UINavigationController!
+    var delegatKontroller: NavBarKnappDelegateController?
     
     var setupHandler: ((NavigationKnapp)->Void)?
     
     func leggTilSynlegKontroller(_ kontroller: UIViewController) {
-        synlegeKontrollerar.append(kontroller.hash)
+        synlegeKontrollerar.append(kontroller.restorationIdentifier ?? kontroller.title ?? "--")
     }
     
     func leggTilSynlegeKontrollerar(_ kontrollerar: [UIViewController]) {
         for kontroller in kontrollerar {
-            synlegeKontrollerar.append(kontroller.hash)
+            leggTilSynlegKontroller(kontroller)
         }
     }
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
-        navBar.delegate = self
+        delegatKontroller?.leggTilKnapp(self)
         setupHandler?(self)
     }
     
@@ -238,7 +239,7 @@ class NavigationKnapp: IconKnapp, UINavigationControllerDelegate {
     }
     
     func sjekkKnapp(vc: UIViewController) {
-        if !synlegeKontrollerar.contains(vc.hash) && !synlegeKontrollerar.isEmpty {
+        if !(synlegeKontrollerar.contains(vc.restorationIdentifier ?? "") || synlegeKontrollerar.contains(vc.title ?? "")) && !synlegeKontrollerar.isEmpty {
             UIView.animate(withDuration: 0.1) {
                 self.alpha = 0
             } completion: { (f) in
@@ -254,7 +255,7 @@ class NavigationKnapp: IconKnapp, UINavigationControllerDelegate {
 }
 
 enum NavKnappLayout {
-    case leading, trailing, vedSidanAv(UIView)
+    case leading, trailing, vedSidanAv(UIView), over(UIView)
     
     func horisontalLayout(_ navBar: UINavigationBar, view: UIView) {
         switch self {
@@ -265,6 +266,8 @@ enum NavKnappLayout {
             case .vedSidanAv(let view2):
                 if view2.superview != navBar { return }
                 view.trailingAnchor.constraint(equalTo: view2.leadingAnchor, constant: -8).isActive = YES
+            case .over(let view2):
+                view.centerXAnchor.constraint(equalTo: view2.centerXAnchor).isActive = YES
         }
     }
     
@@ -273,6 +276,8 @@ enum NavKnappLayout {
             switch self {
                 case .vedSidanAv(let view2):
                     view.centerYAnchor.constraint(equalTo: view2.centerYAnchor).isActive = YES
+                case .over(let view2):
+                    view.bottomAnchor.constraint(equalTo: view2.topAnchor, constant: -8).isActive = YES
                 default:
                     view.bottomAnchor.constraint(equalTo: navBar.bottomAnchor, constant: -8).isActive = YES
             }
@@ -287,13 +292,35 @@ enum NavKnappLayout {
     }
 }
 
+class NavBarKnappDelegateController: NSObject, UINavigationControllerDelegate {
+    
+    var delegatar: [NavigationKnapp] = []
+    var navBarController: UINavigationController
+    
+    init(navBar: UINavigationController) {
+        self.navBarController = navBar
+        super.init()
+        navBar.delegate = self
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        delegatar.forEach { $0.navigationController(navigationController, willShow: viewController, animated: animated) }
+    }
+    
+    func leggTilKnapp(_ knapp: NavigationKnapp) {
+        delegatar.append(knapp)
+    }
+    
+}
+
 extension UINavigationController {
     
-    func leggTilKnapp(ikon: UIImage, action: Action, layoutHandler: NavKnappLayout, synlegFor kontrollerar: [UIViewController]=[]) -> NavigationKnapp {
+    func leggTilKnapp(ikon: UIImage, action: Action, layoutHandler: NavKnappLayout, synlegFor kontrollerar: [UIViewController]=[], delegatKontroller: NavBarKnappDelegateController? = nil) -> NavigationKnapp {
         let navBar = self.navigationBar
         
         let knapp = NavigationKnapp(icon: ikon, action: action)
         knapp.navBar = self
+        knapp.delegatKontroller = delegatKontroller ?? NavBarKnappDelegateController(navBar: self)
         knapp.leggTilSynlegeKontrollerar(kontrollerar)
         knapp.tintColor = .white
         knapp.backgroundColor = .app
